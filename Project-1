@@ -1,0 +1,38 @@
+ackage  
+import java.util.Scanner; 
+ 
+public class  
+ 
+    public static void main(String[] args) { 
+        Scanner sc = new Scanner(System.in); 
+        boolean  = false; 
+ 
+        while (true) { 
+            System.out.println(); 
+            System.out.println("Choose the scheduling algorithm:"); 
+            System.out.println("1. First-Come, First-Served (FCFS)"); 
+            System.out.println("2. Round Robin (RR)"); 
+            System.out.println("3. Terminate Program"); 
+            int choice = sc.nextInt(); 
+ 
+            switch (choice) { 
+                case 1: 
+                    if (! ) { 
+                        fcfsAlgorithm(sc); 
+                         = true; 
+                    } else { 
+                        rrAlgorithm(sc); 
+                    } 
+                    break; 
+                case 2: 
+                    rrAlgorithm(sc); 
+                    break; 
+                case 3: 
+                    System.out.println("Terminating the program..."); 
+                    System.exit(0); 
+                    break; 
+                                     default: 
+                    System.out.println("Invalid choice!"); 
+            } 
+        } 
+    } 
